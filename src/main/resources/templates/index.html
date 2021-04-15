@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- warning: Scale the size proportionally -->
+    <meta name="viewport" content="width=device-width,initial-scale=0">
+    <!-- error : website icon can't use -->
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/favicon.ico}">
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/static/css/index.css}">
+    <link rel="stylesheet" type="text/css" href="static/css/bird.css" th:href="@{/static/css/bird.css}">
+    <link rel="stylesheet" type="text/css" href="static/css/layui/css/layui.css"
+          th:href="@{/static/css/layui/css/layui.css}">
+    <script type="text/javascript" src="webjars/jquery/3.6.0/jquery.js"
+            th:src="@{/webjars/jquery/3.6.0/jquery.js}"></script>
+    <title>Rabbit</title>
+</head>
+<body>
+<div style="display:block;">
+    <!-- Navigation Bar-->
+    <div th:replace="~{template::nav(active='/user/login')}"></div>
+<!--    <div id="nav" class="rabbit-index-nav-wrapper" th:fragment="nav">-->
+<!--        <div class="rabbit-index-nav-left">-->
+<!--            &lt;!&ndash; website's name&ndash;&gt;-->
+<!--            <div class="rabbit-index-name">Rabbit</div>-->
+<!--            &lt;!&ndash; website's title&ndash;&gt;-->
+<!--            <a th:href="@{/user/login}"><div class="rabbit-index-title">Reading</div></a>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!-- Body-->
+    <div class="rabbit-index-body-wrapper">
+        <!--Fly Bird-->
+        <div>
+            <div class="container">
+                <!--<h1>SVG Animated Birds</h1>-->
+                <div class="bird-container bird-container--one">
+                    <div class="bird bird--one"></div>
+                </div>
+                <div class="bird-container bird-container--two">
+                    <div class="bird bird--two"></div>
+                </div>
+                <div class="bird-container bird-container--three">
+                    <div class="bird bird--three"></div>
+                </div>
+                <div class="bird-container bird-container--four">
+                    <div class="bird bird--four"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer Bar-->
+    <div class="rabbit-footer-wrapper" th:fragment="footer">
+        <div class="rabbit-footer-content">
+            <p>QUST - yangxingguo - Rabbit</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

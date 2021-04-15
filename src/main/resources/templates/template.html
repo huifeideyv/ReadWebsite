@@ -1,0 +1,8 @@
+<div id="nav" class="rabbit-index-nav-wrapper" th:fragment="nav">
+    <div class="rabbit-index-nav-left">
+        <!-- website's name-->
+        <div class="rabbit-index-name">Rabbit</div>
+        <!-- website's title-->
+        <a th:href="@{/user/login}"><div class="rabbit-index-title">[[${active=='/user/login'?'Reading':'Login'}]]</div></a>
+    </div>
+</div>
