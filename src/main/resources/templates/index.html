@@ -18,14 +18,6 @@
 <div style="display:block;">
     <!-- Navigation Bar-->
     <div th:replace="~{template::nav(active='/user/login')}"></div>
-<!--    <div id="nav" class="rabbit-index-nav-wrapper" th:fragment="nav">-->
-<!--        <div class="rabbit-index-nav-left">-->
-<!--            &lt;!&ndash; website's name&ndash;&gt;-->
-<!--            <div class="rabbit-index-name">Rabbit</div>-->
-<!--            &lt;!&ndash; website's title&ndash;&gt;-->
-<!--            <a th:href="@{/user/login}"><div class="rabbit-index-title">Reading</div></a>-->
-<!--        </div>-->
-<!--    </div>-->
     <!-- Body-->
     <div class="rabbit-index-body-wrapper">
         <!--Fly Bird-->
@@ -48,11 +40,7 @@
         </div>
     </div>
     <!-- footer Bar-->
-    <div class="rabbit-footer-wrapper" th:fragment="footer">
-        <div class="rabbit-footer-content">
-            <p>QUST - yangxingguo - Rabbit</p>
-        </div>
-    </div>
+    <div th:replace="template::footer"></div>
 </div>
 </body>
 </html>
